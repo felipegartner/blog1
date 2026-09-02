@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Mundo de Juan Felipe</title>
+
+    <style>
+
+        /* ==============================
+           CONFIGURACIÓN GENERAL
+        ============================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #263238;
+            line-height: 1.7;
+            transition: 0.3s;
+        }
+
+        body.dark {
+            background: #111827;
+            color: #e5e7eb;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    #172554,
+                    #2563eb,
+                    #38bdf8
+                );
+
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header .icon {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+
+        /* ==============================
+           NAVEGACIÓN
+        ============================== */
+
+        nav {
+            background: #0f172a;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #2563eb;
+        }
+
+        #darkButton {
+            border: none;
+            background: #374151;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 8px;
+        }
+
+        #darkButton:hover {
+            background: #4b5563;
+        }
+
+
+        /* ==============================
+           SECCIONES
+        ============================== */
+
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            color: #172554;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .dark .section-title h2 {
+            color: #93c5fd;
+        }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        .dark .section-title p {
+            color: #9ca3af;
+        }
+
+
+        /* ==============================
+           PRESENTACIÓN
+        ============================== */
+
+        .intro {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .profile-card,
+        .intro-text {
+            background: white;
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .dark .profile-card,
+        .dark .intro-text {
+            background: #1f2937;
+            color: #e5e7eb;
+        }
+
+        .profile-card {
+            text-align: center;
+        }
+
+        .profile-icon {
+            width: 160px;
+            height: 160px;
+            margin: auto auto 20px;
+
+            border-radius: 50%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #60a5fa,
+                    #1d4ed8
+                );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 75px;
+        }
+
+        .profile-card h3 {
+            font-size: 27px;
+            color: #172554;
+        }
+
+        .dark .profile-card h3 {
+            color: #93c5fd;
+        }
+
+        .profile-card span {
+            color: #64748b;
+        }
+
+        .intro-text p {
+            margin-bottom: 18px;
+        }
+
+
+        /* ==============================
+           DATOS
+        ============================== */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 28px;
+            border-radius: 15px;
+            box-shadow: 0 7px 22px rgba(0,0,0,0.07);
+            border-top: 4px solid #2563eb;
+            transition: 0.3s;
+        }
+
+        .dark .info-card {
+            background: #1f2937;
+        }
+
+        .info-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .info-card .emoji {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .info-card h3 {
+            color: #172554
