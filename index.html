@@ -260,4 +260,525 @@
         }
 
         .info-card h3 {
-            color: #172554
+            color: #172554;
+            margin-bottom: 8px;
+        }
+
+        .dark .info-card h3 {
+            color: #93c5fd;
+        }
+
+        .info-card p {
+            color: #64748b;
+        }
+
+        .dark .info-card p {
+            color: #d1d5db;
+        }
+
+
+        /* ==============================
+           RESPONSIVE
+        ============================== */
+
+        @media (max-width: 900px) {
+
+            header h1 {
+                font-size: 40px;
+            }
+
+            .intro {
+                grid-template-columns: 1fr;
+            }
+
+            .info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 60px 15px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            nav a {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-icon {
+                width: 130px;
+                height: 130px;
+                font-size: 60px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- ==============================
+         INICIO
+    ============================== -->
+
+    <header id="inicio">
+
+        <div class="icon">🌎</div>
+
+        <h1>El Mundo de Juan Felipe</h1>
+
+        <p>
+            <!-- Escribe aquí tu descripción -->
+        </p>
+
+    </header>
+
+
+    <!-- ==============================
+         MENÚ
+    ============================== -->
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="#inicio">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#sobre-mi">Sobre mí</a>
+            </li>
+
+            <li>
+                <a href="#datos">Datos</a>
+            </li>
+
+            <li>
+                <a href="#gustos">Gustos</a>
+            </li>
+
+            <li>
+                <a href="#objetivos">Objetivos</a>
+            </li>
+
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+
+            <li>
+                <button id="darkButton" onclick="modoOscuro()">
+                    🌙 Modo oscuro
+                </button>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ==============================
+         SOBRE MÍ
+    ============================== -->
+
+    <section id="sobre-mi">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>👋 Sobre mí</h2>
+
+                <p>
+                    <!-- Escribe aquí una breve descripción -->
+                </p>
+
+            </div>
+
+
+            <div class="intro">
+
+                <div class="profile-card">
+
+                    <div class="profile-icon">
+                        👨‍💻
+                    </div>
+
+                    <h3>Juan Felipe</h3>
+
+                    <span>
+                        <!-- Escribe aquí información -->
+                    </span>
+
+                </div>
+
+
+                <div class="intro-text">
+
+                    <p>
+                        <!-- Escribe aquí tu información -->
+                    </p>
+
+                    <p>
+                        <!-- Escribe aquí tu información -->
+                    </p>
+
+                    <p>
+                        <!-- Escribe aquí tu información -->
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         DATOS PERSONALES
+    ============================== -->
+
+    <section id="datos">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>📋 Datos</h2>
+
+                <p>
+                    Información personal
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+
+                <div class="info-card">
+
+                    <div class="emoji">🎂</div>
+
+                    <h3>Edad</h3>
+
+                    <p>
+                        <!-- Escribe tu edad -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">📍</div>
+
+                    <h3>Lugar</h3>
+
+                    <p>
+                        <!-- Escribe tu lugar -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">🎓</div>
+
+                    <h3>Estudios</h3>
+
+                    <p>
+                        <!-- Escribe tus estudios -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">🏫</div>
+
+                    <h3>Institución</h3>
+
+                    <p>
+                        <!-- Escribe tu institución -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">👨‍👩‍👦</div>
+
+                    <h3>Familia</h3>
+
+                    <p>
+                        <!-- Escribe información sobre tu familia -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">⭐</div>
+
+                    <h3>Otros datos</h3>
+
+                    <p>
+                        <!-- Escribe aquí otros datos -->
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         GUSTOS
+    ============================== -->
+
+    <section id="gustos">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>⭐ Mis gustos</h2>
+
+                <p>
+                    Cosas que me gustan
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <div class="emoji">🎵</div>
+
+                    <h3>Música</h3>
+
+                    <p>
+                        <!-- Escribe qué música te gusta -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">🎮</div>
+
+                    <h3>Videojuegos</h3>
+
+                    <p>
+                        <!-- Escribe qué videojuegos te gustan -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">⚽</div>
+
+                    <h3>Deportes</h3>
+
+                    <p>
+                        <!-- Escribe qué deportes te gustan -->
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         OBJETIVOS
+    ============================== -->
+
+    <section id="objetivos">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>🎯 Mis objetivos</h2>
+
+                <p>
+                    Mis metas personales
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <div class="emoji">📚</div>
+
+                    <h3>Estudios</h3>
+
+                    <p>
+                        <!-- Escribe tus objetivos académicos -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">🚀</div>
+
+                    <h3>Futuro</h3>
+
+                    <p>
+                        <!-- Escribe tus objetivos para el futuro -->
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         CONTACTO
+    ============================== -->
+
+    <section id="contacto">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>📩 Contacto</h2>
+
+                <p>
+                    Información de contacto
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <div class="emoji">📧</div>
+
+                    <h3>Correo</h3>
+
+                    <p>
+                        <!-- Escribe tu correo -->
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="emoji">📱</div>
+
+                    <h3>Teléfono</h3>
+
+                    <p>
+                        <!-- Escribe tu teléfono -->
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==============================
+         PIE DE PÁGINA
+    ============================== -->
+
+    <footer>
+
+        <p>
+            © 2026 El Mundo de Juan Felipe
+        </p>
+
+    </footer>
+
+
+    <!-- ==============================
+         JAVASCRIPT
+    ============================== -->
+
+    <script>
+
+        function modoOscuro() {
+
+            document.body.classList.toggle("dark");
+
+            const button = document.getElementById("darkButton");
+
+            if (document.body.classList.contains("dark")) {
+
+                button.innerHTML = "☀️ Modo claro";
+
+            } else {
+
+                button.innerHTML = "🌙 Modo oscuro";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
